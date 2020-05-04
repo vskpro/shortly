@@ -4,13 +4,12 @@
   background-image: url("./images/bg-shorten-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40rem 80rem;
-  /* margin-bottom: 20rem; */
+  padding: 40rem;
+  border-radius: 5rem;
 }
 
 .form {
   display: flex;
-  /* margin-top: 20rem; */
 }
 
 .input {
@@ -78,7 +77,7 @@ input[type="submit"] {
   justify-content: space-between;
   align-items: center;
   transform: translateY(-95%);
-  /* display: none; */
+  border-radius: 5rem;
 }
 
 .main-link {
@@ -197,6 +196,7 @@ input[type="submit"] {
 input[type="submit"]:disabled {
   background-color: lightgrey;
   border-color: lightgrey;
+  opacity: 0.5!important;
 }
 
 .hidden {
