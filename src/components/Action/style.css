@@ -1,0 +1,276 @@
+.violet-area {
+  background-color: hsl(257, 27%, 26%);
+  transform: translateY(-50%);
+  background-image: url("./images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40rem 80rem;
+  margin-bottom: 20rem;
+}
+
+.form {
+  display: flex;
+  margin-top: 20rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+}
+
+.input:nth-child(1) {
+  flex-basis: 85%;
+}
+
+.input > input {
+  padding: 15rem 30rem;
+  border-radius: 5rem;
+  font-size: 20rem;
+  outline: none;
+  border-style: solid;
+}
+
+.input.mb > input {
+  border: 2rem solid #dbdbdb;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 15rem 60rem;
+}
+
+.red::placeholder {
+  color: hsl(0, 87%, 67%);
+  opacity: 1;
+}
+
+.red:-ms-input-placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+.red::-ms-input-placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+.red {
+  border-color: hsl(0, 87%, 67%)!important;
+  color: hsl(0, 87%, 67%);
+}
+
+.warning {
+  color: hsl(0, 87%, 67%);
+  margin-top: 5rem;
+  font-style: italic;
+  font-size: 16rem;
+  display: none;
+}
+
+.warning.show {
+  display: inline-block;
+}
+
+.white-area {
+  padding: 20rem 40rem;
+  background: white;
+  margin: 20rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-110%);
+  /* display: none; */
+}
+
+.main-link {
+  color: hsl(257, 27%, 26%);
+}
+
+.short-link {
+  display: flex;
+  align-items: center;
+}
+
+.short-link > .link {
+  color: hsl(180, 66%, 49%);
+  margin: 0 30rem;
+}
+
+.copy-btn {
+  padding: 10rem 20rem;
+  border-radius: 5rem;
+  transition: 0.2;
+  min-width: 90rem;
+}
+
+.copy-btn:hover {
+  opacity: 0.8;
+}
+
+.copied {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.highlight-heading {
+  transform: translateY(-25%);
+  margin: 60rem auto;
+  max-width: 500rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.highlight-heading > .heading {
+  font-size: 40rem;
+  font-weight: 700;
+  color: hsl(257, 27%, 26%);
+  margin-bottom: 10rem;
+}
+
+.three-points {
+  padding-bottom: 40rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.three-points::before {
+  content: "";
+  height: 10rem;
+  width: 90%;
+  background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.point {
+  width: 31.5%;
+  background: white;
+  z-index: 2;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  box-shadow: 0 0 10rem -10rem rgba(0, 0, 0, 0.25);
+  border-radius: 5rem;
+}
+
+.point > .image {
+  background: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  display: flex;
+  height: 85rem;
+  width: 85rem;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  box-shadow: 0 3rem 5rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+.point > .title {
+  font-weight: 700;
+  margin-bottom: 20rem;
+  color: hsl(257, 27%, 26%);
+  font-size: 20rem;
+}
+
+.point > .content {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 60rem;
+}
+
+.point:nth-child(2) {
+  transform: translateY(15%);
+}
+
+.point:nth-child(3) {
+  transform: translateY(30%);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  min-width: 250rem;
+  max-width: 100%;
+}
+
+input[type="submit"]:disabled {
+  background-color: lightgrey;
+  border-color: lightgrey;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .form,
+  .white-area,
+  .short-link,
+  .three-points {
+    flex-direction: column;
+  }
+  .form {
+    margin-top: 0;
+  }
+  .white-area {
+    transform: translateY(-70%);
+  }
+  .short-link,
+  .link {
+    padding: 10rem 0;
+  }
+  .violet-area {
+    padding: 30rem 60rem;
+  }
+  .point {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60rem;
+  }
+  .three-points::before {
+    width: 10rem;
+    height: 90%;
+  }
+  .point > .image {
+    margin: 0 auto;
+  }
+  .input.mb {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .violet-area {
+    padding: 30rem;
+  }
+  .white-area {
+    transform: translateY(-55%);
+  }
+  .wrapper {
+    padding: 30rem 0;
+  }
+  .hero-text {
+    font-size: 28rem;
+  }
+  .hero-desc {
+    font-size: 16rem;
+  }
+  .action-area {
+    margin-top: 50rem;
+  }
+  .highlight-heading > .heading {
+    font-size: 28rem;
+  }
+  .highlight-heading {
+    margin: 30rem auto;
+    transform: translateY(-40%);
+  }
+  .highlight-heading > .desc {
+    font-size: 16rem;
+  }
+  .input > input {
+    padding: 10rem 20rem;
+    font-size: 18rem;
+  }
+}
